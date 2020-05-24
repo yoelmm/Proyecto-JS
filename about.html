@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Proyecto Web con JS,CSS,HTML</title>
+    <!-- añado la ruta del archivo .css y java script -->
+    <link rel="stylesheet" type="text/css" href="../Proyecto/css/style.css">
+
+</head>
+
+<body>
+    <div id="select-theme">
+        <div id="color-green"></div>
+        <div id="color-red"></div>
+        <div id="color-blue"></div>
+
+    </div>
+    <section id="global">
+
+        <!-- cabecera -->
+        <header>
+            <div id="logo">
+                <!-- <div id="buscar">
+                    <input type="text" name="buscar" placeholder="que quieres buscar">
+                </div>
+                <div id="logo"> -->
+
+                <h1>PRACTICANDO JS</h1>
+            </div>
+            <div class="clearfix"></div>
+            <!-- la etiqueta nav permite crear una seccion horizontal para los elementos de navegación -->
+
+            <nav id="menu">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="#">Calculadora</a></li>
+                    <li><a href="reloj.html">Reloj</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+
+        </header>
+        <!-- AGREGO EL ACORDEÓN -->
+        <div id="acordeon">
+            <button class="accordion">Section 1</button>
+            <div class="panel">
+                <p>Lorem ipsum...</p>
+            </div>
+
+            <button class="accordion">Section 2</button>
+            <div class="panel">
+                <p>Lorem ipsum...</p>
+            </div>
+
+            <button class="accordion">Section 3</button>
+            <div class="panel">
+                <p>Lorem ipsum...</p>
+            </div>
+
+        </div>
+        <!-- contenido -->
+        <section id="content">
+            <div id="posts">
+                <article class="post">
+                    <!-- <h2>Prueba de titulo</h2>
+                    <span>fecha de publicacion</span>
+                    <p >
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has
+                        survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently
+                        with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                    </p > -->
+                    <a href="#" class="button-more">Leer más</a>
+
+                </article>
+
+            </div>
+
+            <!-- aqui va el codigo cortado y copiado en otro archivo -->
+
+            <aside id="sidebar">
+                <div id="about">
+                    <h4> <span>¿Quien soy?</span> </h4>
+                    <img src="../Proyecto/img/caracol.jpg" alt="">
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
+                        specimen book.
+                    </p>
+                </div>
+                <div id="login">
+                    <!-- creo un elmento <a> </a> para cerrar sesión. Este apartado está asociado al punto  6 del enunciado del proyecto  -->
+
+                    <form id="form" action="#" onsubmit="return false">
+                        <h4> <span>Identificate</span></h4>
+
+                        <label for="name">Nombre</label><br>
+                        <input type="text" name="name" id="form_name"><br>
+                        <label for="email">Email</label><br>
+                        <input type="email" name="email" id="form_email"><br>
+                        <label for="password">Contraseña</label><br>
+                        <input type="password" name="password" id="form_password">
+                        <input type="submit" value="Aceptar">
+                    </form>
+                </div>
+            </aside>
+            <div class="clearfix"></div>
+        </section>
+    </section>
+    <footer>
+
+        Primer Proyecto en JS &copy;
+        <!-- Se procede a resolver el punto 5 del proyecto, donde por medio de animacion scroll se permite regresar
+             a la parte de arriba de la pagina -->
+        <a href="#" id="subir">Ir a arriba</a>
+    </footer>
+
+
+
+
+    <!-- <script src="../Proyecto/js/slider.js"></script> -->
+    <script src="../Proyecto/js/article.js"></script>
+    <script src="../Proyecto/js/select_theme.js"></script>
+    <script src="../Proyecto/js/scroll.js"></script>
+    <script src="../Proyecto/js/form_local_storage.js"></script>
+    <script src="../Proyecto/js/menu_acordeon.js"></script>
+</body>
+
+</html>
